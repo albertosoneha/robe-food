@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' https://cdn.jsdelivr.net  img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net;">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="description" content="RobéFood - Restaurante Online" >
+    <meta name="keywords" content="robefood, restaurante, online, nova vida">
+    <meta name="robots" content="index, follow, nocache">
+    <meta name="googlebot" content="index, follow">
+    <!--Meta Tag Open graphic-->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="RobéFood - Restaurante Online">
+    <meta property="og:url" content="RobéFood - O Melhor Restaurante da Rua 26  no Nova vida!"/>
+    <meta property="og:image" content="https://robe-food.vercel.app/assets/hamb-1.png"/>
+    <meta property="og:description" content="Os Melhores Pratos Caseiros"/> 
+    <meta property="og:site_name" content="RobéFood"/>
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="page-menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css " crossorigin="anonymous" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div id="page" class="cart">
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="left">
+                        <div class="logo"><a href="index.html" rel="noopenner no-referrer" referrerpolicy="no-referrer">
+                            .RobéFood</a>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html" rel="noopenner no-referrer" referrerpolicy="no-referrer">
+                                    Home</a>
+                                </li>
+                                <li><a href="page-menu.html" rel="noopenner no-referrer" referrerpolicy="no-referrer">
+                                    Menu</a>
+                                </li>
+                                <li><a href="#">
+                                    Entregas</a>
+                                </li>
+                                <li><a href="https://www.google.com/maps/place/Rua+26,+Luanda/@-8.9025217,13.2289012,17z/data=!3m1!4b1!4m6!3m5!1s0x1a51f45209c5efb3:0x7e0576641a24ac50!8m2!3d-8.902527!4d13.2314761!16s%2Fg%2F11fmz1tdws?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" referrerpolicy="no-referrer" target="_blank">
+                                    Localização</a>
+                                </li>
+                                <li><a href="contact.html" rel="noopenner no-referrer" referrerpolicy="no-referrer" target="_blank">
+                                    Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="icons">
+                            <a href="#" class="s-trigger" rel="noopenner no-referrer" referrerpolicy="no-referrer">
+                                <i class="ri-search-line"></i>
+                                <i class="ri-close-line"></i>
+                            </a>
+                            <li class="cart-icon">
+                                <a href="cart.html" referrerpolicy="no-referrer" rel="noopenner no-referrer"  class="cart-trigger">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span id="cart-count">0</span>
+                                </a>
+                            </li>
+
+                            <a href="#" class="m-trigger mobile-only">
+                                <i class="ri-menu-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <form action="" class="search">
+                <div class="container">
+                    <input type="search" placeholder="Procure para comer...">
+                </div>
+            </form>
+        </header>
+        <main>
+           <div class="single-cart">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="breadcrumb">
+                            <ul class="flexitem">
+                                <li><a href="index.html" referrerpolicy="no-referrer" rel="noopenner no-referrer">Home</a></li>
+                                <li>Carrinho</li>
+                            </ul>
+                        </div>
+                        <div class="page-title">
+                            <h1 class="cart-title"><i class="ri-shopping-cart-line"></i> Carrinho de compras</h1>
+                        </div>
+                        <div class="products one cart">
+                            <div class="flexwrap">
+                                <form action="" class="form-cart">
+                                    <div class="item">
+                                        <table id="cart-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Ítem</th>
+                                                    <th>Preço</th>
+                                                    <th>Qtd</th>
+                                                    <th>Subtotal</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </form>
+                                <div class="cart-summary styled">
+                                    <div class="item">
+                                        <div class="cart-total">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Subtotal</th>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Desconto</th>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Entrega<span class="mini-text">(taxa)</span></th>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="grand-total">
+                                                        <th>Total</th>
+                                                        <td><strong></strong></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a class="primary-button" id="ordernow">Pedir Agora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </main>
+        <div id="pedido-popup" class="popup">
+            <div class="popup-content">
+              <h2>Endereço de Entrega</h2>
+              <form id="form-pedido">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required />
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[\+][0-9]{2}[0-9]{9,}" required />
+                <label for="endereco">Nº Rua/Ponto de Referência:</label>
+                <input type="text" id="endereco" name="endereco" required />
+              </form>
+              <div class="btns">
+                <button class="close-btn" type="button" id="fechar-popup">Fechar</button>
+                <button class="secondary-btn" id="finalizar-pedido">Finalizar Pedido</button>
+              </div>
+            </div>
+            
+          </div>
+          <footer>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="widget-footer">
+                        <h4>Resto</h4>
+                        <ul>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Sobre nós">Sobre Nós</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Destaques">Destaques</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Nosso Menu">Nosso Menu</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget-footer">
+                        <h4>Apoio</h4>
+                        <ul>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Centro de Apoio">Centro de Apoio</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Feedback">Feedback</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="P e R">P e R</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Contate-nos">Contate-nos</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget-footer">
+                        <div class="logo"><a href="#" rel="noopener noreferrer">.RobéFood</a></div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, ipsum!</p>
+                        <p>Urb. Nova vida. <br>Luanda, Angola</p>
+                        <ul class="socials">
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Facebook"><i class="ri-facebook-line"></i></a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Twitter"><i class="ri-twitter-line"></i></a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">&copy 2024 .RobéFood &reg;. Todos os direitos reservados.</p>
+            </div>
+            
+        </footer>
+    </div>
+    <div class="overlay"></div>
+    <script>
+        // Função para mostrar o menu Hamburguer para mobile
+        document.addEventListener("DOMContentLoaded", updateCartCount);
+        const divtoShow = "nav .menu";
+        const divPopup = document.querySelector(divtoShow);
+        const divTrigger = document.querySelector(".m-trigger");
+
+        divTrigger.addEventListener("click", () => {
+        setTimeout(() => {
+            if (!divPopup.classList.contains("show")) {
+            divPopup.classList.add("show");
+            document.body.classList.add("menu-visible");
+            }
+        }, 250);
+        });
+
+
+        function renderCart() {
+            const cartTableBody = document.querySelector("#cart-table tbody");
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cartTableBody.innerHTML = "";
+
+                cart.forEach((product, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td><img src="${product.image}" alt="${product.name}"><strong>${product.name}</strong></td>
+                    <td>${product.price}</td>
+                    <td>
+                        <button class="minus" data-index="${index}">-</button>
+                        <input type="text" value="${product.quantity}" class="quantity-input" data-index="${index}" readonly>
+                        <button class="plus" data-index="${index}">+</button>
+                    </td>
+                    <td class="subtotal">${(parseFloat(product.price.replace("$", "")) * product.quantity).toFixed(2)}</td>
+                    <td><a href="#" class="item-remove" data-index="${index}">X</a></td>
+                `;
+                cartTableBody.appendChild(row);
+            });
+
+            updateCartTotals();
+        }
+
+        function updateCartTotals() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const deliveryFee = 100.0;
+            const discount = 10.0;
+            let subtotal = 0;
+
+            cart.forEach((item) => subtotal += parseFloat(item.price.replace("$", "")) * item.quantity);
+            const total = subtotal - discount + deliveryFee;
+
+            document.querySelector(".cart-total .subtotal").textContent = `$${subtotal.toFixed(2)}`;
+            document.querySelector(".cart-total .discount").textContent = `$${discount.toFixed(2)}`;
+            document.querySelector(".cart-total .delivery-fee").textContent = `$${deliveryFee.toFixed(2)}`;
+            document.querySelector(".cart-total .total").textContent = `$${total.toFixed(2)}`;
+        }
+
+        window.addEventListener("storage", function (e) {
+            if (e.key === "cart") {
+                renderCart();
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            renderCart();
+        });
+
+
+        
+        // Atualiza a contagem de itens no carrinho
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            const cartCountElement = document.getElementById("cart-count");
+
+            if (cartCountElement) {
+                cartCountElement.textContent = count;
+                cartCountElement.classList.add("pulse");
+                setTimeout(() => {
+                    cartCountElement.classList.remove("pulse");
+                }, 300);
+            }
+        }
+
+        // Atualiza os totais do carrinho: subtotal, desconto, taxa de entrega e total
+        function updateCartTotals() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const deliveryFee = 100.0; // Taxa de entrega fixa
+            const discount = 10.0; // Desconto fixo
+
+            let subtotal = 0;
+
+            // Calcula o subtotal
+            cart.forEach((item) => {
+                subtotal += parseFloat(item.price.replace("$", "")) * item.quantity;
+            });
+
+            // Calcula o total
+            const total = subtotal - discount + deliveryFee;
+
+            // Atualiza o HTML com os valores calculados
+            document.querySelector(".cart-total tbody tr:nth-child(1) td").textContent = `$${subtotal.toFixed(2)}`;
+            document.querySelector(".cart-total tbody tr:nth-child(2) td").textContent = `$${discount.toFixed(2)}`;
+            document.querySelector(".cart-total tbody tr:nth-child(3) td").textContent = `$${deliveryFee.toFixed(2)}`;
+            document.querySelector(".cart-total tbody tr.grand-total td strong").textContent = `$${total.toFixed(2)}`;
+        }
+
+        
+        
+        // Atualiza o carrinho no localStorage e renderiza a tabela
+        function updateCart() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            localStorage.setItem("cart", JSON.stringify(cart));
+            renderCart();
+            updateCartCount();  // Atualiza a contagem de itens
+            updateCartTotals(); // Atualiza os totais
+        }
+
+        // Função que renderiza o carrinho na página
+        function renderCart() {
+            const cartTableBody = document.querySelector("#cart-table tbody");
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            cartTableBody.innerHTML = "";
+            cart.forEach((product, index) => {
+                const TableRow = document.createElement("tr");
+                TableRow.innerHTML = `
+                    <td class="flexitem">
+                        <div class="thumbnail">
+                            <a href="#"><img src="${product.image}" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <strong><a href="#">${product.name}</a></strong>
+                        </div>
+                    </td>
+                    <td>${product.price}</td>
+                    <td>
+                        <div class="qty-control flexitem">
+                            <button class="minus" data-index="${index}" aria-label="Reduce quantity">-</button>
+                            <input type="text" value="${product.quantity}" min="1" name="quantity" class="quantity-input" data-index="${index}" readonly>
+                            <button class="plus" data-index="${index}" aria-label="Increase quantity">+</button>
+                        </div>
+                    </td>
+                    <td class="subtotal">${(parseFloat(product.price.replace("$", "")) * product.quantity).toFixed(2)}</td>
+                    <td><a href="#" class="item-remove" data-index="${index}"><i class="ri-close-line"></i></a></td>
+                `;
+                cartTableBody.appendChild(TableRow);
+            });
+
+            updateCartTotals();  // Atualiza os totais ao renderizar o carrinho
+        }
+
+        // Manipula os cliques nos botões de incremento, decremento e remoção
+        document.querySelector("#cart-table tbody").addEventListener("click", function (e) {
+            if (e.target.closest("[data-index]")) {
+                const index = parseInt(e.target.closest("[data-index]").dataset.index);
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                if (e.target.classList.contains("minus")) {
+                    // Decrementa a quantidade ou remove o produto
+                    cart[index].quantity = Math.max(1, cart[index].quantity - 1);
+                    if (cart[index].quantity === 0) {
+                        cart.splice(index, 1);
+                    }
+                } else if (e.target.classList.contains("plus")) {
+                    // Incrementa a quantidade
+                    cart[index].quantity++;
+                } else if (e.target.closest(".item-remove")) {
+                    // Remove o item
+                    cart.splice(index, 1);
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                renderCart();
+                updateCartCount();
+                updateCartTotals();
+            }
+        });
+
+        // Atualiza os preços em tempo real ao mudar a quantidade diretamente
+        document.querySelector("#cart-table tbody").addEventListener("input", function (e) {
+            if (e.target.classList.contains("quantity-input")) {
+                const index = parseInt(e.target.dataset.index);
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                cart[index].quantity = parseInt(e.target.value) || 1;
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                renderCart();
+                updateCartCount();
+                updateCartTotals();
+            }
+        });
+
+        // Chama as funções de renderização ao carregar a página
+        document.addEventListener("DOMContentLoaded", function () {
+            renderCart();
+            updateCartCount(); // Atualiza a contagem ao carregar a página
+            updateCartTotals(); // Atualiza os totais ao carregar a página
+        });
+
+        
+        // Exibe o popup ao clicar em "Ordernow"
+        document.getElementById("ordernow").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("pedido-popup").style.display = "flex";
+            updateCartTotals();
+        });
+
+        // Fecha o popup ao clicar em "Fechar"
+        document.getElementById("fechar-popup").addEventListener("click", function () {
+            document.getElementById("pedido-popup").style.display = "none";
+        });
+
+        // Envia o pedido via WhatsApp ao clicar em "Finalizar Pedido"
+        document.getElementById("finalizar-pedido").addEventListener("click", function () {
+            const nome = document.getElementById("nome").value;
+            const telefone = document.getElementById("telefone").value;
+            const endereco = document.getElementById("endereco").value;
+
+            if (!nome || !telefone || !endereco) {
+                alert("Preencha todos os campos.");
+                return;
+            }
+
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let mensagem = `(* Novo Pedido *)\n\n Cliente: ${nome}\n Telefone: ${telefone}\n Endereço: ${endereco}\n\n`;
+
+            cart.forEach((product) => {
+                const totalItem = parseFloat(product.price.replace("$", "")) * product.quantity;
+                mensagem += ` Produto: ${product.name}\n Quantidade: ${product.quantity}\n Total: $${totalItem.toFixed(2)}\n`;
+            });
+
+            mensagem = encodeURIComponent(mensagem);
+            const phone = '+244922987493'
+            const whatsappLink = `https://wa.me/${phone}?text=${mensagem}`;
+
+            window.open(whatsappLink, "_blank");
+            document.getElementById("pedido-popup").style.display = "none"; // Fecha o popup
+        });
+
+        // Atualiza os totais do carrinho no popup
+        function updateCartTotals() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const deliveryFee = 100.0;
+            const discount = 10.0;
+            let subtotal = 0;
+
+            cart.forEach((item) => subtotal += parseFloat(item.price.replace("$", " ")) * item.quantity);
+            const total = subtotal - discount + deliveryFee;
+
+            document.querySelector(".cart-total tbody tr:nth-child(1) td").textContent = `$${subtotal.toFixed(2)}`;
+            document.querySelector(".cart-total tbody tr:nth-child(2) td").textContent = `$${discount.toFixed(2)}`;
+            document.querySelector(".cart-total tbody tr:nth-child(3) td").textContent = `$${deliveryFee.toFixed(2)}`;
+            document.querySelector(".cart-total tbody tr.grand-total td strong").textContent = `$${total.toFixed(2)}`;
+        }
+
+    </script>
+</body>
+</html>

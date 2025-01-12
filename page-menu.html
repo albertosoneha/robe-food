@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net;">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="description" content="RobéFood - Restaurante Online" >
+        <meta name="keywords" content="robefood, restaurante, online, nova vida">
+        <meta name="robots" content="index, follow, nocache">
+        <meta name="googlebot" content="index, follow">
+        <!--Meta Tag Open graphic-->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="RobéFood - Restaurante Online">
+        <meta property="og:url" content="RobéFood - O Melhor Restaurante da Rua 26  no Nova vida!"/>
+        <meta property="og:image" content="https://robe-food.vercel.app/assets/hamb-1.png"/>
+        <meta property="og:description" content="Os Melhores Pratos Caseiros"/> 
+        <meta property="og:site_name" content="RobéFood"/>
+        <title>Menu completo</title>
+        <link rel="stylesheet" href="page-menu.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+<body>
+    <div id="page" class="menu">
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="left">
+                        <div class="logo">
+                            <a href="index.html" rel="noopener noreferrer" referrerpolicy="no-referrer">
+                                .RobéFood</a>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html" rel="noopener noreferrer" referrerpolicy="no-referrer">
+                                    Home</a>
+                                </li>
+                                <li><a href="page-menu.html" rel="noopener noreferrer" referrerpolicy="no-referrer">
+                                    Menu</a>
+                                </li>
+                                <li><a href="#" rel="noopener noreferrer">
+                                    Entregas</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/maps/place/Rua+26,+Luanda/@-8.9025217,13.2289012,17z/data=!3m1!4b1!4m6!3m5!1s0x1a51f45209c5efb3:0x7e0576641a24ac50!8m2!3d-8.902527!4d13.2314761!16s%2Fg%2F11fmz1tdws?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
+                                        referrerpolicy="no-referrer" target="_blank" rel="noopener noreferrer">
+                                        Localização
+                                    </a>
+                                </li>
+                                <li><a href="contact.html" rel="noopener no-referrer" referrerpolicy="no-referrer">
+                                    Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="icons">
+                            <a href="#" class="s-trigger" aria-label="Abrir barra de pesquisa">
+                                <i class="ri-search-line"></i>
+                                <i class="ri-close-line"></i>
+                            </a>
+                            <!-- Ícone do carrinho com contagem de itens -->
+                            <li class="cart-icon">
+                                <a href="cart.html" rel="noopener noreferrer" referrerpolicy="no-referrer" class="cart-trigger" aria-label="Ir para o carrinho de compras">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span id="cart-count">0</span>
+                                </a>
+                            </li>
+                            <a href="#" class="m-trigger mobile-only" rel="noopener no-referrer" referrerpolicy="no-referrer">
+                                <i class="ri-menu-line"></i>
+                            </a>
+                        </div>
+                    </div>                    
+                </nav>
+            </div>
+            <form class="search">
+                <div class="container">
+                    <input id="search-input" type="text" placeholder="Procure para comer..." autocomplete="off">
+                </div>
+            </form>
+            <div id="search-results" class="search-results item"></div>
+        </header>
+        <main>
+            <div class="hero">
+                <div class="bg-dark"></div>
+            </div>
+
+            <!--Menu Produtos-->
+            <div class="tabbed has-bg">
+                <div class="main-head-brief">
+                    <h3>Conheça nosso menu</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis eveniet est corrupti
+                        officiis quisquam voluptates.</p>
+                </div>
+                <div class="tabbed-container">
+
+                    <nav class="tnav link-slide">
+                        <ul>
+                            <li><a href="#pastelaria" rel="noopener noreferrer">Pastelaria</a></li>
+                            <li><a href="#pratos-decoracoes" rel="noopener noreferrer">Pratos & Decorações</a></li>
+                            <li><a href="#hervas-temperos" rel="noopener noreferrer">Hervas & Temperos</a></li>
+                            <li><a href="#nozes" rel="noopener noreferrer">Nozes</a></li>
+                            <li><a href="#comida-do-mar" rel="noopener noreferrer">Comida do Mar</a></li>
+                            <li><a href="#vegetais" rel="noopener noreferrer">Vegetais</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="tabbed-item">
+                        <div class="products">
+                            <div>
+                                <ul>
+
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/categories/cat5.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked1.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked3.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked4.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked5.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked6.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked7.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked8.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/baked9.jpg" alt="Assados no forno">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Assados no forno</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Pastelaria é bom</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/products/garnish6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Assados no forno</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.5</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">Bolo caseiro</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Bolo caseiro" data-price="11.99" data-quantity="1"
+                                                    data-image="assets/products/baked9.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!--Assados no forno-->
+
+                            <div>
+                                <ul>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/garnish1.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Sushi</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/garnish2.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Sushi</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/garnish3.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Sushi</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/garnish4.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Sushi</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/garnish5.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Sushi</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Pratos & Decorações-->
+
+                            <div>
+                                <ul>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/herbs1.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Hervas & Temperos</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/herbs2.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Hervas & Temperos</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/herbs3.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Hervas & Temperos</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/herbs4.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Hervas & Temperos</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/products/herbs5.jpg" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Hervas & Temperos</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Hervas e Temperos-->
+
+                            <div>
+                                <ul>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/slider/food1.png" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/slider/food2.png" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/slider/food3.png" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/slider/food5.png" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#" rel="noopener noreferrer">
+                                                <img src="assets/slider/food6.png" alt="Pratos & Decorações">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat">
+                                                    <a href="#" rel="noopener noreferrer">Pratos & Decorações</a>
+                                                </span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="#" rel="noopener noreferrer">Dolor lorem, ipsum dolor..</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="Pastelaria é bom" data-price="11.99"
+                                                        data-quantity="1" data-image="assets/products/baked1.jpg"
+                                                        aria-label="Adicionar Pastelaria é bom no carrinho">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" 
+                                                   class="cart-icon-page" rel="noopener noreferrer">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Nuts-->
+
+                            <div>
+                                <ul>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Comida do mar</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">Camarão</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat2.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Comida do mar</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">Frutas do mar</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat3.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Comida do mar</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida do mar</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat4.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Comida do mar</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida do mar</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat5.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Comida do mar</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida do mar</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat6.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Comida do Mar-->
+
+                            <div>
+                                <ul>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Vegetais</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida do mar</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat1.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Vegetais</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida do mar</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat4.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Vegetais</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida Lorem ipsum dolor sit amet.</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat6.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Vegetais</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida Lorem ipsum dolor.</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat4.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="thumbnail covering">
+                                            <a href="#">
+                                                <img src="assets/categories/cat4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <div class="catrate">
+                                                <span class="cat"><a href="#">Vegetais</a></span>
+                                                <span class="rating">
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.9</span>
+                                                </span>
+                                            </div>
+                                            <h2><a href="">A comida Lorem ipsum dolor si.</a></h2>
+                                            <div class="price">
+                                                <strong class="current">$11.99</strong>
+                                            </div>
+                                            <div class="buttons">
+                                                <button data-name="The shrimp seafood" data-price="11.99"
+                                                    data-quantity="1" data-image="assets/categories/cat4.jpg">
+                                                    Adicionar no carrinho
+                                                </button>
+                                                <a href="cart.html" referrerpolicy="no-referrer" class="cart-icon-page">
+
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Vegetais-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Menu Refeições-->
+
+            <!---Obra de arte-->
+            <div class="masterpiece has-bg">
+                <div class="bg-dark"></div>
+                <div class="container">
+                    <div class="head-brief">
+                        <h3>Da Cozinha para a Obra de Arte</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate totam molestiae vero
+                            consectetur delectus saepe error voluptates provident consequatur nostrum</p>
+                    </div>
+                    <div class="wrapper">
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/slider/food3.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>A Salada</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, veniam. Veniam
+                                    natus cupiditate aut similique?</p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="image">
+                                <img src="assets/slider/food4.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>O Lanche</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, veniam. Veniam
+                                    natus cupiditate aut similique?</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/slider/food6.png" alt="">
+                            </div>
+                            <div class="text ">
+                                <h2>O Pão</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, veniam. Veniam
+                                    natus cupiditate aut similique?</p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="image">
+                                <img src="assets/slider/food1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>A Delícia</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, veniam. Veniam
+                                    natus cupiditate aut similique?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Fim Obra de arte-->
+
+            <div class="formblog has-bg">
+                <div class="bg-dark"></div>
+                <div class="fromblog-container">
+
+                    <div class="head-brief">
+                        <h3>Do Blog</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate totam molestiae vero
+                            consectetur delectus saepe error voluptates provident consequatur nostrum</p>
+                    </div>
+                    <div class="wrapper">
+                        <div class="post-list products">
+                            <ul>
+                                <li>
+                                    <div class="thumbnail covering">
+                                        <a href="#"><img src="assets/categories/cat3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="catrate">
+                                            <span class="cat">
+                                                <a href="#">Culinária</a>
+                                            </span>
+                                            <span class="date">julho 20, 2022</span>
+                                        </div>
+                                        <h2><a href="#">Obtenha o bolo em Lorem ipsum dolor.</a></h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumbnail covering">
+                                        <a href="#"><img src="assets/categories/cat4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="catrate">
+                                            <span class="cat">
+                                                <a href="#">Receitas</a>
+                                            </span>
+                                            <span class="date">Maio 10, 2022</span>
+                                        </div>
+                                        <h2><a href="#">Temperos Lorem ipsum dolor.</a></h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumbnail covering">
+                                        <a href="#"><img src="assets/categories/cat6.jpg" alt=""></a>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="catrate">
+                                            <span class="cat">
+                                                <a href="#">O Resto</a>
+                                            </span>
+                                            <span class="date">Maio 21, 2022</span>
+                                        </div>
+                                        <h2><a href="#">Bolo maravilhoso do Lorem ipsum dolor.</a></h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Do Blog-->
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="widget-footer">
+                        <h4>Resto</h4>
+                        <ul>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Sobre nós">Sobre Nós</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Destaques">Destaques</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Nosso Menu">Nosso Menu</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget-footer">
+                        <h4>Apoio</h4>
+                        <ul>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Centro de Apoio">Centro de Apoio</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Feedback">Feedback</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="P e R">P e R</a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Contate-nos">Contate-nos</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget-footer">
+                        <div class="logo"><a href="#" rel="noopener noreferrer">.RobéFood</a></div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, ipsum!</p>
+                        <p>Urb. Nova vida. <br>Luanda, Angola</p>
+                        <ul class="socials">
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Facebook"><i class="ri-facebook-line"></i></a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Twitter"><i class="ri-twitter-line"></i></a></li>
+                            <li><a href="#" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">&copy 2024 .RobéFood &reg;. Todos os direitos reservados.</p>
+            </div>
+            
+        </footer>
+    </div>
+    <div class="overlay"></div>
+    <script>
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            const cartCountElement = document.getElementById("cart-count");
+
+            if (cartCountElement) {
+                cartCountElement.textContent = count;
+
+                // Adiciona a animação
+                cartCountElement.classList.add("pulse");
+                setTimeout(() => {
+                cartCountElement.classList.remove("pulse");
+                }, 300);
+            }
+        }
+
+        //---Função para mostrar a barra de buscar
+        const sTrigger = document.querySelector(".s-trigger");
+        const addclass = document.querySelector(".menu");
+        sTrigger.addEventListener("click", () => {
+            addclass.classList.toggle("showsearch");
+        });
+
+        //---Adicione um listener para mudanças no localStorage
+        window.addEventListener("storage", function (e) {
+            if (e.key === "cart") {
+                updateCartCount();
+            }
+        });
+
+        //---Chama esta função quando a página carregar
+        document.addEventListener("DOMContentLoaded", updateCartCount);
+            const divtoShow = "nav .menu";
+            const divPopup = document.querySelector(divtoShow);
+            const divTrigger = document.querySelector(".m-trigger");
+
+            divTrigger.addEventListener("click", () => {
+            setTimeout(() => {
+                if (!divPopup.classList.contains("show")) {
+                divPopup.classList.add("show");
+                document.body.classList.add("menu-visible");
+                }
+            }, 250);
+        });
+
+        //---Fecha automaticamente ao clicar fora dele
+        document.addEventListener("click", (e) => {
+        const isClosest = e.target.closest(divtoShow);
+
+            if (!isClosest && divPopup.classList.contains("show")) {
+                divPopup.classList.remove("show");
+                document.body.classList.remove("menu-visible");
+            }
+        });
+
+        //---Função para atualizar o carrinho
+        function updateCart(product, action) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const existingProductIndex = cart.findIndex(
+                (item) => item.name === product.name
+            );
+            if (existingProductIndex !== -1) {
+                if (action === "remove") {
+                cart[existingProductIndex].quantity -= 1;
+                if (cart[existingProductIndex].quantity <= 0) {
+                    cart.splice(existingProductIndex, 1);
+                }
+                } else if (action === "add") {
+                cart[existingProductIndex].quantity += 1;
+                }
+            } else if (action === "add") {
+                product.quantity = 1;
+                cart.push(product);
+            }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        return cart;
+        }
+
+        //---Função para remover item do carrinho
+        function removeFromCart(product) {
+            const updatedCart = updateCart(product, "remove");
+                if (updatedCart.find((item) => item.name === product.name)) {
+                    alert("Quantidade do produto reduzida!");
+                } else {
+                    alert("Produto removido do carrinho!");
+                }
+        }
+
+        //---Event listener para os botões "Adicionar no carrinho"
+        document.querySelectorAll(".buttons button").forEach((button) => {
+            button.addEventListener("click", function () {
+                const productElement = this.closest(".item");
+                const product = {
+                name: productElement.querySelector("h2 a").textContent,
+                image: productElement.querySelector(".thumbnail img").src,
+                description: productElement.querySelector(".meta .catrate .cat a")
+                    .textContent,
+                price: productElement.querySelector(".price .current").textContent,
+                };
+                addToCart(product);
+            });
+        });
+
+        //---Função para adicionar item ao carrinho
+        function addToCart(product) {
+            updateCart(product, "add");
+            updateCartCount();
+            alert("Produto adicionado ao carrinho!");
+        }
+
+
+        //---Função de buscar e mostral resultados
+        
+        const items = [ //---Lista de itens com URLs adicionadas
+        { 
+            id: 1, 
+            name: "Pastelaria é bom", 
+            category: "Assados no forno", 
+            price: 45.00, 
+            image: "./assets/products/baked1.jpg",
+            url: "./page-menu.html?id=1" 
+        },
+        { 
+            id: 2, 
+            name: "Pastelaria lorem upsum dolor", 
+            category: "Assados no forno", 
+            price: 25.00, 
+            image: "./assets/products/baked2.jpg",
+            url: "./page-menu.html?id=2" 
+        },
+        { 
+            id: 3, 
+            name: "Dolor Cupcakes", 
+            category: "Assados no forno", 
+            price: 80.00, 
+            image: "./assets/products/baked3.jpg",
+            url: "./page-menu.html?id=3" 
+        },
+        { 
+            id: 4, 
+            name: "Dolor Cupcakes", 
+            category: "Assados no forno", 
+            price: 50.00, 
+            image: "./assets/products/baked4.jpg",
+            url: "./page-menu.html?id=4" 
+        },
+        { 
+            id: 5, 
+            name: "Dolor Cupcakes", 
+            category: "Assados no forno", 
+            price: 20.00, 
+            image: "./assets/products/baked5.jpg",
+            url: "./page-menu.html?id=5" 
+        },
+        ];
+
+        //---Elementos do DOM
+        const searchInput = document.getElementById("search-input");
+        const resultsContainer = document.getElementById("search-results");
+
+        //---Função para exibir os resultados
+        function showSearchResults(query) {
+        resultsContainer.innerHTML = ""; // Limpa resultados anteriores
+
+        if (!query.trim()) {
+            resultsContainer.style.display = "none"; // Esconde se estiver vazio
+            return;
+        }
+
+        //---Filtra itens com base no texto digitado
+        const filteredItems = items.filter(item =>
+            item.name.toLowerCase().includes(query.toLowerCase())
+        );
+
+        if (filteredItems.length === 0) {
+            resultsContainer.innerHTML = "<p>Nenhum resultado encontrado.</p>";
+        } else {
+            const list = document.createElement("div");
+            list.classList.add("item-list");
+
+            filteredItems.forEach(item => {
+            const itemContainer = document.createElement("div");
+            itemContainer.classList.add("item");
+
+            const image = document.createElement("img");
+            image.src = item.image;
+            image.alt = item.name;
+
+            const name = document.createElement("h4");
+            name.textContent = item.name;
+
+            const category = document.createElement("p");
+            category.textContent = `Categoria: ${item.category}`;
+
+            const price = document.createElement("p");
+            price.textContent = `Preço: $${item.price.toFixed(2)}`;
+
+            // Adiciona redirecionamento ao clicar no item
+            itemContainer.addEventListener("click", () => {
+                window.location.href = item.url;
+            });
+
+            itemContainer.appendChild(image);
+            itemContainer.appendChild(name);
+            itemContainer.appendChild(category);
+            itemContainer.appendChild(price);
+
+            list.appendChild(itemContainer);
+            });
+
+            resultsContainer.appendChild(list);
+        }
+
+        resultsContainer.style.display = "block"; // Mostra resultados
+        }
+
+        //---Adicionar evento de input ao campo de busca
+        searchInput.addEventListener("input", event => {
+        showSearchResults(event.target.value);
+        });
+
+
+
+        //---Função para sanitizar entradas
+        function sanitizeInput(input) {
+        const tempDiv = document.createElement("div");
+        tempDiv.textContent = input;
+        return tempDiv.innerHTML;
+        }
+
+        //---Validação de dados do carrinho
+        function validateCartData(cart) {
+        return Array.isArray(cart) && cart.every(item => {
+            return typeof item.name === "string" &&
+                typeof item.price === "string" &&
+                typeof item.quantity === "number";
+        });
+        }
+
+        //---Atualiza a contagem do carrinho
+        function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        if (!validateCartData(cart)) {
+            localStorage.removeItem("cart");
+            return;
+        }
+        
+        const count = cart.reduce((total, item) => total + item.quantity, 0);
+        const cartCountElement = document.getElementById("cart-count");
+
+        if (cartCountElement) {
+            cartCountElement.textContent = count;
+            cartCountElement.classList.add("pulse");
+            setTimeout(() => cartCountElement.classList.remove("pulse"), 300);
+        }
+        }
+
+        //---Adiciona ao carrinho com validação
+        function updateCart(product, action) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        if (!validateCartData(cart)) cart = [];
+
+        const existingProductIndex = cart.findIndex(item => item.name === product.name);
+        if (existingProductIndex !== -1) {
+            if (action === "remove") {
+            cart[existingProductIndex].quantity -= 1;
+            if (cart[existingProductIndex].quantity <= 0) cart.splice(existingProductIndex, 1);
+            } else if (action === "add") {
+            cart[existingProductIndex].quantity += 1;
+            }
+        } else if (action === "add") {
+            product.quantity = 1;
+            cart.push(product);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        }
+
+        //---Notificações amigáveis
+        function showNotification(message, type = "success") {
+        const notification = document.createElement("div");
+        notification.className = `notification ${type}`;
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        setTimeout(() => notification.remove(), 3000);
+        }
+
+        //---Busca com debounce
+        function debounce(func, delay) {
+        let timeout;
+        return function (...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func(...args), delay);
+        };
+        }
+
+        //---Busca dinâmica com validação
+        function showSearchResults(query) {
+        resultsContainer.innerHTML = "";
+        if (!query.trim()) {
+            resultsContainer.style.display = "none";
+            return;
+        }
+
+        const filteredItems = items.filter(item => 
+            sanitizeInput(item.name).toLowerCase().includes(query.toLowerCase())
+        );
+
+        if (filteredItems.length === 0) {
+            resultsContainer.innerHTML = "<p>Nenhum resultado encontrado.</p>";
+        } else {
+            const list = document.createElement("div");
+            list.classList.add("item-list");
+            filteredItems.forEach(item => {
+            const itemContainer = document.createElement("div");
+            itemContainer.classList.add("item");
+
+            const image = document.createElement("img");
+            image.src = item.image;
+            image.alt = sanitizeInput(item.name);
+
+            const name = document.createElement("h4");
+            name.textContent = sanitizeInput(item.name);
+
+            const category = document.createElement("p");
+            category.textContent = `Categoria: ${sanitizeInput(item.category)}`;
+
+            const price = document.createElement("p");
+            price.textContent = `Preço: $ ${item.price.toFixed(2)}`;
+
+            itemContainer.addEventListener("click", () => {
+                window.location.href = item.url;
+            });
+
+            itemContainer.appendChild(image);
+            itemContainer.appendChild(name);
+            itemContainer.appendChild(category);
+            itemContainer.appendChild(price);
+            list.appendChild(itemContainer);
+            });
+            resultsContainer.appendChild(list);
+        }
+
+        resultsContainer.style.display = "block";
+        }
+
+        //---Event listener com debounce na pesquisa
+        searchInput.addEventListener("input", debounce(event => {
+        showSearchResults(event.target.value);
+        }, 300));
+
+        //---Atualiza o carrinho ao carregar a página
+        document.addEventListener("DOMContentLoaded", updateCartCount);
+
+
+        
+        //---Função que permite enviar os ítens para a página cart.html
+        document.addEventListener("DOMContentLoaded", function () {
+            const addToCartButtons = document.querySelectorAll(".add-to-cart");
+            addToCartButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                const product = {
+                    name: this.dataset.name,
+                    price: this.dataset.price,
+                    image: this.dataset.image,
+                    quantity: 1,
+                };
+
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                const existingProductIndex = cart.findIndex(
+                    (item) => item.name === product.name
+                );
+
+                if (existingProductIndex !== -1) {
+                    cart[existingProductIndex].quantity += 1;
+                } else {
+                    cart.push(product);
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Produto adicionado ao carrinho!");
+                });
+            });
+        });
+        const theTab = new Swiper(".tabbed-item", {
+            loop: false,
+            slidePerView: 1,
+            autoHeght: true,
+
+            breakpoints: {
+                481: {
+                    slidePerView: 2,
+                    slidePerGroup: 1,
+                    centeredSlides: false,
+                },
+                639: {
+                    slidePerView: 3,
+                    slidePerGroup: false,
+                    centeredSlides: false,
+                },
+                992: {
+                    slidePerView: 4,
+                    slidePerGroup: 4,
+                    centeredSlides: false,
+                },
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

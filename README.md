@@ -1,6 +1,6 @@
-# 🍔 robe-food
+# 🍔 RobéFood-site
 
-Robe Food é uma plataforma online de delivery que conecta clientes a restaurantes, oferecendo uma experiência simples, rápida e eficiente para pedidos de comida. Com uma interface amigável e responsiva, o objetivo é facilitar o acesso a refeições deliciosas no conforto de sua casa.
+RobéFood é um website online de delivery que conecta clientes a restaurantes, oferecendo uma experiência simples, rápida e eficiente para pedidos de comida. Com uma interface amigável e responsiva, o objetivo é facilitar o acesso a refeições deliciosas no conforto de sua casa.
 
 ## 🎯 Objetivo do Projeto
 
